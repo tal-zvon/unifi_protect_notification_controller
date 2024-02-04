@@ -1,0 +1,13 @@
+This is a demo of how to enable/disable notifications from Python on a
+Unifi Protect system using httpx (async).
+
+httpx is almost exactly the same syntax as requests, so it should be
+trivial to convert this into sync code that uses requests. I only used
+async because most python scripts for home assistant use async.
+
+The only real requirements are pydantic, and httpx
+
+To use, just modify the variables at the top of the script.
+
+IMPORTANT NOTE: A user can only control their own notification settings, so
+they MUST login as the user whos notification settings you want to change.
